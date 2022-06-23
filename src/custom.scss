@@ -1,0 +1,282 @@
+$enable-rounded: false;
+.fn{
+  font-family: 'Roboto Mono', monospace;
+}
+
+@import "~bootstrap/scss/bootstrap.scss";
+
+@media (max-width: 576px) {
+  .d-mobile-block {
+    display: block !important;
+  }
+}
+
+@media (min-width: 576px) {
+  .d-web-contents {
+    display: contents !important;
+  }
+}
+.member:hover{
+  box-shadow: rgb(255, 255, 255) 0px 5px 15px;
+  transform:translateY(-10px);
+}
+.min-h-screen {
+  min-height: 75vh;
+}
+.zoom {
+  transition: transform .2s; /* Animation */
+}
+.zoom:hover {
+  transition: transform .2s;
+  border-radius: 13px;
+  box-shadow: 0 0 5px #03a0f4, 0 0 25px #03a0f4, 0 0 50px #03e9f4;
+}
+ .textanimation{
+  animation: text-shadow 1.5s ease-in-out infinite;
+  font-size: 2em;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.textanimation:hover {
+  animation-play-state: paused;
+}
+.eduboxht{
+  height:135px;
+}
+#my-pie-chart-container {
+  display: flex;
+  align-items: center;
+}
+
+#my-pie-chart {
+  background: conic-gradient(
+  brown  0% 6%, 
+  rgb(59, 136, 162) 1% 10%, 
+  green 5% 13%, 
+  yellow 13% 23%, 
+  orange 23% 40%, 
+  rgb(5, 213, 192) 30%);
+  border-radius: 50%;
+    width: 250px;
+    height: 250px;
+}
+
+#legenda {
+  margin-left: 40px;
+  background-color: white;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.entry {
+  display: flex;
+  align-items: center;
+}
+
+.entry-color {
+    height: 10px;
+    width: 10px;
+}
+
+.entry-text {
+  margin-left: 5px;
+}
+
+#color-red {
+  background-color: rgb(5, 213, 192);
+}
+
+#color-orange {
+  background-color: orange;
+}
+
+#color-yellow {
+  background-color: yellow;
+}
+
+#color-green {
+  background-color: green;
+}
+#color-black {
+  background-color: rgb(59, 136, 162);
+}
+
+#color-brown {
+  background-color: brown;
+}
+
+@keyframes text-shadow {
+  0% {  
+      transform: translateY(0);
+      text-shadow: 
+          0 0 0 #6573bdd7, 
+          0 0 0 #2cfcfd, 
+          // 0 0 0 #fb203b, 
+        
+  }
+
+  20% {  
+      transform: translateY(-1em);
+      text-shadow: 
+          0 0.125em 0 #0c2ffb, 
+          0 0.25em 0 #2cfcfd, 
+          // 0 -0.125em 0 #fb203b, 
+       
+  }
+
+  40% {  
+      transform: translateY(0.5em);
+      text-shadow: 
+          0 -0.0625em 0 #0c2ffb, 
+          0 -0.125em 0 #2cfcfd, 
+          0 0.0625em 0 #fb203b, 
+      
+  }
+  
+ 60% {
+      transform: translateY(-0.25em);
+      text-shadow: 
+          0 0.03125em 0 #0c2ffb, 
+          0 0.0625em 0 #2cfcfd, 
+          // 0 -0.03125em 0 #fb203b, 
+     
+  }
+
+  80% {  
+      transform: translateY(0);
+      text-shadow: 
+          0 0 0 #0c2ffb, 
+          0 0 0 #2cfcfd, 
+          0 0 0 #fb203b, 
+        
+  }
+}
+$color-black: hsl(0, 0%, 5%);
+$color-color: hsl(0, 0%, 100%);
+
+$color-html: hsl(15, 100%, 60%);
+$color-css: hsl(200, 100%, 60%);
+$color-java: hsl(300, 100%, 60%);
+$color-python: hsl(60, 100%, 60%);
+
+
+$porcent-html: 95;
+$porcent-css: 85;
+$porcent-java: 20;
+$porcent-python: 30;
+
+
+@function strokeDashoffset($num) {
+  @return 440 - (440 * $num) / 100;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container__progressbars {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  min-width: 270px;
+  width: 100%;
+  min-height: 100%;
+}
+
+.progressbar {
+  position: relative;
+  width: 170px;
+  height: 170px;
+  margin: 1em;
+  transform: rotate(-90deg);
+}
+
+.progressbar__svg {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.progressbar__svg-circle {
+  width: 100%;
+  height: 100%;
+  fill: none;
+  stroke-width: 10;
+  stroke-dasharray: 440;
+  stroke-dashoffset: 440;
+  stroke: hsl(0, 0%, 100%);
+  stroke-linecap: round;
+  transform: translate(5px, 5px); // stroke-width / 2
+}
+
+.shadow {
+  &-html {
+    filter: drop-shadow(0 0 5px $color-html);
+  }
+  &-css {
+    filter: drop-shadow(0 0 5px $color-css);
+  }
+  &-java {
+    filter: drop-shadow(0 0 5px $color-java);
+  }
+  &-python {
+    filter: drop-shadow(0 0 5px $color-python);
+  }
+ 
+}
+
+.circle {
+  &-html {
+    animation: anim_circle-html 1s ease-in-out forwards;
+  }
+  &-css {
+    animation: anim_circle-css 1s ease-in-out forwards;
+  }
+  &-java {
+    animation: anim_circle-java 1.10s ease-in-out forwards;
+  }
+  &-python {
+    animation: anim_circle-python 1.10s ease-in-out forwards;
+  }
+  
+}
+
+.progressbar__text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 0.25em 0.5em;
+  color: hsl(0, 0%, 100%);
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 0.25em;
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+
+//  @keyframes
+
+@keyframes anim_circle-html {
+  to {
+    stroke-dashoffset: strokeDashoffset($porcent-html);
+  }
+}
+
+@keyframes anim_circle-css {
+  to {
+    stroke-dashoffset: strokeDashoffset($porcent-css);
+  }
+}
+
+@keyframes anim_circle-java {
+  to {
+    stroke-dashoffset: strokeDashoffset($porcent-java);
+  }
+}
+
+@keyframes anim_circle-python {
+  to {
+    stroke-dashoffset: strokeDashoffset($porcent-python);
+  }
+}
+
