@@ -36,10 +36,10 @@ function Header() {
                                    <a href="https://instagram.com/d_h_r_u_v_i_l__099?igshid=YmMyMTA2M2Y="target="_blank">  <img src={instagram} className="img-fluid zoom " alt="instagram" width={30} /></a>
                                    <a href="https://www.facebook.com/profile.php?id=100010481741253"target="_blank">  <img src={facebook} className="img-fluid zoom" alt="facebook" width={30} /></a>
                                 </div>
-                                <li className="text-white nav-link active d-flex justify-content-center mt-2 fs-4 "><Link to={'/'} className="nav-link px-2  text-white zoom">Home</Link></li>
-                                <li className="text-white nav-link active d-flex justify-content-center  fs-4"><Link to={'/education'} className="nav-link px-2 text-white zoom">Education</Link></li>
-                                <li className="text-white nav-link active d-flex justify-content-center  fs-4"><Link to={'/experience'} className="nav-link px-2 text-white zoom">Experience</Link></li>
-                                <li className="text-white nav-link active d-flex justify-content-center  fs-4"><Link to={'/skills'} className="nav-link px-2 text-white zoom">Skills</Link></li>
+                                <li className="text-white nav-link active d-flex justify-content-center mt-2 fs-4" data-bs-dismiss="offcanvas"><Link to={'/'} className="nav-link px-2  text-white zoom">Home</Link></li>
+                                <li className="text-white nav-link active d-flex justify-content-center  fs-4"data-bs-dismiss="offcanvas"><Link to={'/education'} className="nav-link px-2 text-white zoom">Education</Link></li>
+                                <li className="text-white nav-link active d-flex justify-content-center  fs-4"data-bs-dismiss="offcanvas"><Link to={'/experience'} className="nav-link px-2 text-white zoom">Experience</Link></li>
+                                <li className="text-white nav-link active d-flex justify-content-center  fs-4"data-bs-dismiss="offcanvas"><Link to={'/skills'} className="nav-link px-2 text-white zoom">Skills</Link></li>
                             </ul>
                         </div>
                     </div>
