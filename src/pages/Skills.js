@@ -37,7 +37,13 @@ function Skills() {
                                     <circle cx="80" cy="80" r="70" class="progressbar__svg-circle circle-python shadow-python"> </circle>
                                 </svg>
                                 <span class="progressbar__text shadow-python">Python</span>
-                            </div>                            
+                            </div>  
+                            <div class="progressbar">
+                                <svg class="progressbar__svg">
+                                    <circle cx="80" cy="80" r="70" class="progressbar__svg-circle circle-react shadow-react"> </circle>
+                                </svg>
+                                <span class="progressbar__text shadow-react">ReactJs</span>
+                            </div> 
                         </div>
                     </div>
                     <div id="main-container-social" class="main-container-social"></div>
