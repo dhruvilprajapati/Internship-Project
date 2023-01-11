@@ -7,7 +7,7 @@ export default function Layout() {
       <div className="container pt-5 d-flex flex-column align-items-center">
         <img src={avtar} width={180} height={180} alt="Dhruvil Prajapati" className='rounded-circle zoom member' />
         <h3 className='mt-5 textanimation'>I'm Dhruvil Prajapati</h3>
-        <h4 className='mt-3'>Web Designer</h4>
+        <h4 className='mt-3'>Software Developer</h4>
         <p className="text-center border-bottom pb-3 mt-3">I am a hard working, honest individual. I am a good timekeeper, always willing to learn new skills. I am friendly, helpful and polite, have a good sense of humour. I am able to work independently in busy environments and also within a team setting. I am outgoing and tactful, and able to listen effectively when solving problems.</p>
         <p className="text-center" style={{paddingTop: "35px"}}>
           <span className="d-mobile-block">Email: prajapatidhruvil.a@gmail.com</span>
